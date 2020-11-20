@@ -9,7 +9,7 @@ export class TabNav extends Component {
                         this.props.tabs.map(tab => {
                             const active = (tab === this.props.selected ? 'active' : '');
                             return (
-                                <li className="nav-item" key={tab}>
+                                < li className="nav-item" key={tab} >
                                     <a className={"nav-link" + active} onClick={() => this.props.setSelected(tab)}>
                                         {tab}
                                     </a>
@@ -18,8 +18,8 @@ export class TabNav extends Component {
                         })
                     }
                 </ul>
-                {this.props.children}
-            </div>
+                { this.props.children}
+            </div >
         )
     }
 }
